@@ -74,16 +74,81 @@ Execute a aplicação com a classe principal AlertaCidadaoApplication.
 
 Acesse no navegador: http://localhost:8080/rotas
 
-📌 Exemplo de Uso
-Um dos principais módulos do sistema permite visualizar rotas cadastradas com informações como:
+✅ Instruções para Acesso e Testes
+Siga os passos abaixo para executar e testar o sistema Alerta Cidadão em sua máquina local.
 
-Rua Paulo Orozimbo, 1162 - Apto 23
+▶️ Execução Local
+✔️ Pré-requisitos:
+Java 17 ou superior instalado
 
-Bairro: Cambuci
+Maven instalado
 
-Cidade: São Paulo/SP
 
-CEP: 01535-001
+🚀 Passo a passo:
+Clone ou extraia o projeto em sua máquina:
+
+git clone [URL do repositório]  (caso esteja no GitHub)
+ou apenas abra a pasta do projeto na IDE.
+
+No terminal da raiz do projeto, execute:
+
+mvn spring-boot:run
+
+Acesse no navegador:
+
+http://localhost:8080/rotas
+
+🧪 Como Testar o Sistema
+1. 📄 Página Inicial
+2. 
+Exibe todas as rotas cadastradas.
+
+Permite busca por bairro ou cidade.
+
+Mostra cartões com endereço, bairro, cidade e CEP.
+
+2. ➕ Cadastrar Nova Rota
+Clique em “Cadastrar nova rota”.
+
+Preencha os seguintes campos:
+
+Endereço
+
+Bairro
+
+Cidade
+
+CEP
+
+Clique em Salvar para registrar a nova rota.
+
+3. ✏️ Editar uma Rota Existente
+Na listagem de rotas, clique no botão Editar ao lado da rota desejada.
+
+Faça as alterações nos campos.
+
+Clique em Atualizar rota para salvar as mudanças.
+
+4. ❌ Excluir uma Rota
+Clique no botão Excluir ao lado da rota que deseja remover.
+
+A rota será removida da base de dados.
+
+5. 🔍 Buscar por Localização
+Use o campo de busca no topo da página para filtrar rotas por:
+
+Bairro
+
+Cidade
+
+O sistema exibirá somente as rotas que correspondem à pesquisa.
+
+💡 Observações
+O sistema utiliza banco de dados em memória H2, que é reiniciado sempre que a aplicação é parada.
+
+Ideal para testes rápidos e demonstrações locais.
+
+O layout é responsivo e intuitivo, facilitando a navegação para qualquer usuário.
 
 Os botões de editar e excluir permitem a gestão fácil dessas rotas.
 
